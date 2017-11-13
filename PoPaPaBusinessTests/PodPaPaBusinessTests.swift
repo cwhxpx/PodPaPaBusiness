@@ -7,9 +7,9 @@
 //
 
 import XCTest
-@testable import GoldenBeansBusiness
+@testable import PodPaPaBusiness
 
-class GoldenBeansBusinessTests: XCTestCase {
+class PodPaPaBusinessTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
