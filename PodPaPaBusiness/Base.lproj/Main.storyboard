@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mov-kY-NQH">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Scan View Controller-->
+        <scene sceneID="fra-6Y-v04">
+            <objects>
+                <viewController id="mov-kY-NQH" customClass="ScanViewController" customModule="PodPaPaBusiness" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="foe-Bb-8lE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coffee-club" translatesAutoresizingMaskIntoConstraints="NO" id="uNW-8N-Acu">
+                                <rect key="frame" x="0.0" y="20" width="375" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="qml-gl-igE"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CustomID:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aEX-ak-fAe">
+                                <rect key="frame" x="84" y="267" width="86" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="86" id="HUU-Xp-jS1"/>
+                                    <constraint firstAttribute="height" constant="26" id="c16-ut-TSg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sx6-XU-oak">
+                                <rect key="frame" x="117" y="318" width="21" height="26"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dND-Vh-cli">
+                                <rect key="frame" x="180" y="267" width="171" height="26"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MQN-80-djh">
+                                <rect key="frame" x="139" y="318" width="97" height="26"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="21"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zyi-cH-JfU">
+                                <rect key="frame" x="329" y="637" width="46" height="30"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="1" green="0.61167724507318577" blue="0.09512037257672723" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="uNW-8N-Acu" firstAttribute="leading" secondItem="foe-Bb-8lE" secondAttribute="leading" id="0zo-4q-daJ"/>
+                            <constraint firstItem="aEX-ak-fAe" firstAttribute="top" secondItem="uNW-8N-Acu" secondAttribute="bottom" constant="47" id="G75-qb-5qk"/>
+                            <constraint firstAttribute="trailing" secondItem="uNW-8N-Acu" secondAttribute="trailing" id="HuA-ib-VTN"/>
+                            <constraint firstItem="Sx6-XU-oak" firstAttribute="leading" secondItem="IiL-GH-eoe" secondAttribute="leading" constant="117" id="L5A-cs-M3K"/>
+                            <constraint firstItem="MQN-80-djh" firstAttribute="top" secondItem="aEX-ak-fAe" secondAttribute="bottom" constant="25" id="LTu-h0-IPP"/>
+                            <constraint firstItem="dND-Vh-cli" firstAttribute="leading" secondItem="aEX-ak-fAe" secondAttribute="trailing" constant="10" id="NUZ-x6-UlN"/>
+                            <constraint firstItem="Sx6-XU-oak" firstAttribute="centerX" secondItem="aEX-ak-fAe" secondAttribute="centerX" id="PMS-HN-sNH"/>
+                            <constraint firstItem="Zyi-cH-JfU" firstAttribute="bottom" secondItem="IiL-GH-eoe" secondAttribute="bottom" id="Pyz-tT-8X7"/>
+                            <constraint firstItem="uNW-8N-Acu" firstAttribute="top" secondItem="IiL-GH-eoe" secondAttribute="top" id="RiU-uK-kHc"/>
+                            <constraint firstItem="aEX-ak-fAe" firstAttribute="baseline" secondItem="dND-Vh-cli" secondAttribute="baseline" id="Vee-Y4-jTX"/>
+                            <constraint firstItem="Zyi-cH-JfU" firstAttribute="trailing" secondItem="uNW-8N-Acu" secondAttribute="trailing" id="Vf2-ep-71y"/>
+                            <constraint firstItem="aEX-ak-fAe" firstAttribute="leading" secondItem="IiL-GH-eoe" secondAttribute="leading" constant="84" id="ef9-Je-QZW"/>
+                            <constraint firstItem="Zyi-cH-JfU" firstAttribute="leading" secondItem="IiL-GH-eoe" secondAttribute="leading" constant="329" id="foR-ho-TTe"/>
+                            <constraint firstItem="MQN-80-djh" firstAttribute="centerX" secondItem="uNW-8N-Acu" secondAttribute="centerX" id="fqF-H4-vvf"/>
+                            <constraint firstItem="IiL-GH-eoe" firstAttribute="trailing" secondItem="MQN-80-djh" secondAttribute="trailing" constant="139" id="iJI-qB-hG8"/>
+                            <constraint firstItem="aEX-ak-fAe" firstAttribute="firstBaseline" secondItem="dND-Vh-cli" secondAttribute="firstBaseline" id="rZC-CI-lXt"/>
+                            <constraint firstItem="Sx6-XU-oak" firstAttribute="centerY" secondItem="MQN-80-djh" secondAttribute="centerY" id="rtm-e9-HXR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="IiL-GH-eoe"/>
+                    </view>
+                    <connections>
+                        <outlet property="customerID" destination="dND-Vh-cli" id="peP-DA-QXD"/>
+                        <outlet property="spendAmounts" destination="MQN-80-djh" id="uXE-4l-C6U"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JSW-Nh-6v6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-194.40000000000001" y="-147.07646176911544"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="coffee-club" width="1000" height="749"/>
+    </resources>
+</document>
